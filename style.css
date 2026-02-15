@@ -368,3 +368,96 @@ input[type="range"]::-webkit-slider-thumb{
 .songs::-webkit-scrollbar {
     height: 0px;   /* Chrome, Edge, Safari */
 }
+/* meadia query */
+
+/* ============================= */
+/* 📱 Mobile Responsive Design  */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
+        gap: 1rem;
+    }
+
+    .left-half {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .search-bar {
+        width: 90%;
+    }
+
+    .right-half {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .right-half-p1 {
+        border: none;
+        margin: 0.5rem 0;
+        padding: 0;
+    }
+
+    /* Main Layout */
+    .main {
+        flex-direction: column;
+        height: auto;
+        min-width: 100%;
+    }
+
+    .main-left-part {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .main-right-part {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Music Cards */
+    .music-section {
+        margin-left: 1rem;
+    }
+
+    .songs {
+        gap: 1rem;
+    }
+
+    .music-card {
+        width: 8rem;
+    }
+
+    .music-card img {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .music-play-btn {
+        transform: translate(85px, -35px);
+    }
+
+    .music-card:hover .music-play-btn {
+        transform: translate(85px, -45px);
+    }
+
+    /* Player Bar */
+    .player-bar {
+        flex-direction: column;
+        height: auto;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    #progressBar {
+        width: 90%;
+    }
+
+}
